@@ -1,24 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crash History</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <script src='https://cdn.plot.ly/plotly-2.12.1.min.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-    <div class="container">
-        <img src="/assets/images/plane.jpeg" alt="Plane" class="bg">
-        <div class="text-center">Hot Comets</div>
-      </div>
 
-      <div class="flourish-embed flourish-map" data-src="visualisation/10825007"><script src="https://public.flourish.studio/resources/embed.js"></script></div
-    
-    <script src='js/main.js'></script>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crash History</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script src='https://cdn.plot.ly/plotly-2.12.1.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<main>
+		<!-- Header -->
+		<section class="parallax bg">
+			<div class="caption" onclick="goToOpeningStatement()">
+				<span class="border glow-button text-color">scroll down</span>
+			</div>
+		</section>
+		<!-- Feat of flying statement -->
+		<section class="static statement text-color">
+			<p>Airplanes are incredible feats of technology that make it possible to easily and safely travel all around
+				the world. But the fear of falling often keeps people from flying.<br /> Not so?</p>
+		</section>
+		<!-- Stats on fear -->
+		<div class="flourish-embed flourish-cards" data-src="visualisation/10827237">
+			<h1 class="heading self-center text-color text-color ">The 6 Most Common Causes of the Fear of Flying</h1>
+			<h3 class="sub-heading text-color self-center">
+				Fear of flying, or aviophobia, is an anxiety disorder. About 40 percent of the general population reports some fear of flying, and 2.5 percent have what is classified as a clinical phobia, one in which a person avoids flying or does so with significant distress
+			</h3>
+			<script src="https://public.flourish.studio/resources/embed.js"></script>
+		</div>
+		<!-- Fatalities over time -->
+		<div class="flourish-embed flourish-chart" data-src="visualisation/10826929">
+			<h1 class="heading self-center text-color">Yearly Aviations Fatalities since 1908</h1>
+			<h3 class="sub-heading text-color self-center">Full yearly history of airplane fatalities, from 1908-present</h3>
+			<script src="https://public.flourish.studio/resources/embed.js"></script>
+		</div>
+		<!-- Map on fatalities  -->
+		<div class="flourish-embed flourish-map" data-src="visualisation/10825007">
+			<h1 class="heading self-center text-color">Global Display of Aviations Accidents since 1908</h1>
+			<h3 class="sub-heading text-color self-center">Full history of airplane crashes throughout the world, from 1908-present</h3>
+		</div>
+		<!-- Crash reasons -->
+		<section id="crash-reasons"></section>
+
+		<!-- Safety over time -->
+		<div class="flourish-embed flourish-chart" data-src="visualisation/10826868">
+			<h1 class="heading self-center text-color">How aviation safety has improved</h1>
+			<h3 class="sub-heading text-color">There has been a staggering reduction in the numbers of both fatal accidents and fatalities in the intervening decades, the result of technology, improvements in air traffic control and pilot training</h3>
+			<script src="https://public.flourish.studio/resources/embed.js"></script>
+		</div>
+		<section class="static statement text-color">
+			<p>The chance of dying in a transportation-related accident is one in 6,800. 
+
+				The chance of dying in a plane crash? One in 13 million. 
+				
+				Yet that doesn't stop us from getting the sweats when boarding a plane—and yet not think twice about stepping into our car. 
+				
+				Part of this is down to visibility. We don't read car crashes in the news, but a single airplane crash makes international headlines.</p>
+		</section>
+		<div class="flourish-embed flourish-chart" data-src="visualisation/10827736">
+			<h1 class="heading self-center text-color">Airline safety vs automotive transport</h1>
+			<script src="https://public.flourish.studio/resources/embed.js"></script>
+		</div>
+		<div class="flourish-embed flourish-cards" data-src="visualisation/10833874">
+			<h1 class="heading self-center text-color">How to Get Over Your Fear of Flying in 6 Simple Steps</h1>
+			<h3 class="sub-heading text-color self-center">Conquer your fear of flying with these expert tips.</h3>
+			<script src="https://public.flourish.studio/resources/embed.js"></script>
+		</div>
+		<section class="static statement text-color" style="display: flex; flex-direction: column">
+			<p style="display: block">Sources:</p><br/>
+			<ul>
+				<li><a href="https://injuryfacts.nsc.org/home-and-community/safety-topics/deaths-by-transportation-mode/#:~:text=Passenger%20vehicles%20are%20by%20far,higher%20than%20for%20scheduled%20airlines">
+					Deaths by Transport Mode
+				</a></li>
+				<li> <a href="http://www.planecrashinfo.com/">
+					Plane crash database
+				</a></li>
+				<li> <a href="https://www.airlines.org/dataset/world-airlines-traffic-and-capacity/">
+					Airlines dataset
+				</a></li>
+			</ul>
+			<!-- <p>
+				<a href="https://injuryfacts.nsc.org/home-and-community/safety-topics/deaths-by-transportation-mode/#:~:text=Passenger%20vehicles%20are%20by%20far,higher%20than%20for%20scheduled%20airlines">
+					Deaths by Transport Mode
+				</a>
+			</p>
+			<p>
+				<a href="http://www.planecrashinfo.com/">
+					Plane crash database
+				</a>
+			</p>
+			<p>
+				<a href="https://www.airlines.org/dataset/world-airlines-traffic-and-capacity/">
+					Airlines dataset
+				</a>
+			</p> -->
+
+		</section>
+	</main>
+
+	<script src='js/main.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </body>
+
 </html>

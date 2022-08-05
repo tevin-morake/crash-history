@@ -78,6 +78,10 @@ h6 {
     overflow-wrap: break-word;
 }
 
+.text-color {
+  color:  rgb(119, 119, 119);
+}
+
 .container {
     position: relative;
     text-align: center;
@@ -92,3 +96,127 @@ h6 {
     font-size: 4rem;
     font-weight: bold;
 }
+
+/* Where the fun begins */
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  margin: 0;
+}
+
+section {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.static {
+  background-color: #111;
+  z-index: 999;
+}
+
+.statement {
+  color: rgb(119, 119, 119);
+  font-size: 2rem;
+  letter-spacing: 6px;
+  text-align: justify;
+  padding: 50px 80px;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.parallax h1 {
+  width: 60%;
+  font-size: 2rem !important;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/assets/images/plane.jpeg");
+  background-size: cover;
+}
+
+.phobia-bg {
+  background: url("/assets/images/phobia.png");
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  section h1 {
+    font-size: 8rem;
+  }
+  .parallax h1 {
+    font-size: 4rem;
+  }
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  font-family: Lato, sans-serif;
+  background-color: #111;
+  padding: 18px;
+  font-size: 25px;
+  border-radius: 4px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.self-center {
+  text-align: center;
+}
+
+.heading {
+  margin-top: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 32px Lato,sans-serif;
+  font-weight: 500;
+}
+.sub-heading {
+    padding: 10px 30px 0 30px;
+ }
+
+.fl-layout-wrapper-outer {
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.flourish-credit {
+  display: flex;
+  justify-content: center;
+}
+a:link {
+  color:  rgb(119, 119, 119);}
