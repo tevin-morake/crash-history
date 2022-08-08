@@ -1,37 +1,34 @@
 
-# Hot Comets
+# Airplane Crash History
 
-A brief description of what this project does and who it's for
-
+This repo aims to tell an infographic design-thinking story about the history of airplane crashes. The goal is to dismiss the flase phobia around flying, & encourage people to board flights more often, after seeing a story told that is reassuring.
 
 ## Acknowledgements
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [SwipeiX](https://www.linkedin.com/company/swipe-ix/mycompany/)
+ - [Deon Heunis](https://www.linkedin.com/in/deon-heunis-b700488/)
+ - [Leo Redelinghuys](https://www.linkedin.com/in/leoredelinghuys/)
+ - [New Media](https://www.linkedin.com/company/new-media/)
 
 
 ## Authors
-
-- [@katherinepeterson](https://www.github.com/octokatherine)
-
-
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+ - [Tevin Morake](https://github.com/tevin-morake)
+ - [Deon Heunis](https://github.com/deonheunis)
+ - [Muneer Manie](https://www.linkedin.com/in/muneer-manie-21081312b/)
+ - [Andre van Heerden](https://github.com/skellstaff)
 
 
-## FAQ
+## Demo
 
-#### Question 1
+![Hot Comets Landing Page](assets/images/plane-home.png)
+![Hot Comets Statistics](assets/images/plane-stats.png)
 
-Answer 1
 
-#### Question 2
+## Feedback
 
-Answer 2
+If you have any feedback, please reach out to us at tevin@swipeix.com
+
+
+## 🚀 About Me
+I'm just a guy who types all day. The things I type normally end up being explosive and colourful stories
 
